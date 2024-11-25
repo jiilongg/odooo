@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="study_session_view_tree" model="ir.ui.view">
+        <field name="name">study.session.view.tree</field>
+        <field name="model">study.session</field>
+        <field name="arch" type="xml">
+            <list string="Study Session" editable="bottom">
+                <field name="name"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+                <field name="description" optional="hide"/>
+                <field name="check_in_grace_period" optional="show"/>
+                <field name="check_out_grace_period" optional="show"/>
+                <field name="session_type" optional="show"/>
+            </list>
+        </field>
+    </record> 
+
+</odoo>

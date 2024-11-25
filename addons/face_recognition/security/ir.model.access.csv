@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_face_recognition,Face Recognition User,model_face_recognition,base.group_user,1,1,1,1
+access_student_information,Student Information,model_student_information,base.group_user,1,1,1,1
+access_study_session,Study Session User,model_study_session,base.group_user,1,1,1,1
+access_student_attendance,Student Attendance,model_student_attendance,base.group_user,1,1,1,1

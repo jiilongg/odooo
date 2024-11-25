@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="face_recognition_root" 
+        name="Face Recognition" 
+        sequence="10"/> 
+
+        <menuitem
+            id="student_attendance_menu"
+            name="Attendance"
+            action="action_student_attendance"
+            parent="face_recognition_root"
+            sequence="10"/>
+ 
+        <menuitem
+            id="scan_attendance"
+            name="Start Scan"
+            action="action_face_recognition"
+            parent="face_recognition_root"
+            sequence="20"/>
+   
+        <menuitem 
+            id="menu_student_information" 
+            name="Students" 
+            parent="face_recognition_root" 
+            action="action_student_information" 
+            sequence="30"/>
+
+        <menuitem
+            id="study_session_menu"
+            name="Session"
+            action="study_session_action"
+            parent="face_recognition_root"
+            sequence="40"/>
+
+</odoo>

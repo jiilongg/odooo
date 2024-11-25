@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="face_recognition_view_form" model="ir.ui.view">
+        <field name="name">face.recognition.view.form</field>
+        <field name="model">face.recognition</field>
+        <field name="arch" type="xml">
+            <form string="Face Recognition">
+                <sheet>
+                    <group>  
+                        <span>Click <span class="text-primary"><b>Start Camera</b></span> to begin scanning for attendance.</span>
+                    </group>
+                    <footer> 
+                        <button string="Start Camera" type="object" name="start_camera_and_recognize" class="btn-primary"/> 
+                        <button string="Close Camera" type="object" name="close_camera" class="btn-secondary"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record> 
+
+</odoo> 
+
